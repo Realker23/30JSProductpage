@@ -1,0 +1,186 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100svh;
+    background: #d0eaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    width: 90%;
+    max-width: 75rem;
+    display: flex;
+}
+
+.gallery{
+    flex-basis: 47%;
+    background: #241e20;
+    transform: scale(1.08);
+    box-shadow: -1rem .5rem 1rem 1rem rgba(0,0,0,0.1);
+    position: relative;
+
+}
+
+.gallery img{
+    width: 100%;
+    padding-top: 10rem;
+    display: block;
+}
+
+.details{
+    flex-basis: 53%;
+    background: #fff;
+    padding:4rem;
+    padding-left: 6rem;
+    box-shadow: -1rem .5rem 1rem 1rem rgba(0,0,0,0.1);
+    font-size: 1.3rem;
+    color: #777;
+    font-weight: 500;
+}
+
+.details h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #333;
+}
+.details h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.details h3{
+    font-size: 1.6rem;
+    color: #00d874;
+    font-weight: 500;
+    margin-bottom: 2rem;
+
+}
+
+.details form{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.size-list,.color-list{
+    display: flex;
+    margin: 2rem 0;
+    
+}
+
+.size-list p{
+    width: 7rem;
+}
+
+.size-list input:checked + span{
+    color: blue;
+    font-weight: 600;
+
+}
+.size-list input{
+    visibility: hidden;
+}
+
+.size-list span{
+    cursor: pointer;
+}
+
+.color-list p{
+    width: 8.5rem;
+}
+
+.color-list span{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    border: 1px solid #00000056;
+}
+
+.color-1{
+    background-color: red;
+}
+.color-2{
+    background-color: beige;
+}
+.color-4{
+    background-color: black;
+}
+.color-3{
+    background-color: tan;
+}
+
+.color-list input{
+    display: none;
+}
+
+.color-list input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+}
+.quantity p{
+    width: 8.5rem;
+}
+
+.quantity input{
+    background: #eee;
+    border-radius: 1.2rem;
+    border: 0;
+    outline: none;
+    padding: 5px 5px 5px 10px;
+    width: 50px;
+}
+
+button{
+    background: #553ff0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 0;
+    outline: 0;
+    margin-top: 5rem;
+    box-shadow: 0 1rem 1rem rgba(85,63,240,0.3);
+    cursor: pointer;
+}
+
+
+.control{
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+}
+
+.btn{
+    background: #777;
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active{
+    background: #553ff0;
+}
